@@ -1,0 +1,94 @@
+======================================================================
+MASKED DIFFUSION LANGUAGE MODEL (MDLM) EVALUATION
+======================================================================
+
+--- Loading MDLM Model ---
+✓ Successfully loaded mdlm_best.pth
+  MDLM Model: 8 layers, 512 dim, 8 heads
+  Total Parameters: 25.38M
+
+======================================================================
+1. INFERENCE TIME
+======================================================================
+
+Testing MDLM Model (20 runs, 256 tokens, 100 steps)...
+
+MDLM Model Avg Time: 0.3159 seconds for 256 tokens
+MDLM Model Speed: 810.37 tokens/second
+Sampling Steps Used: 100
+
+======================================================================
+2. GENERATION QUALITY SAMPLES
+======================================================================
+
+--- MDLM Generated Samples ---
+
+Sample 1:
+ir!
+Pray, calls ha! Heaven!
+A desire
+Than, Capulet!
+In the soul! then, strike a seize by whip may paries, last! shall show thee.
+
+Bona:
+My mistress intent.
+
+CAMILLLO:
+An by my things look your suffered so visit a rson,
+It strike grown one is chide tetrimen
+----------------------------------------------------------------------
+
+Sample 2:
+ow not
+That is my shall be advanced hour
+France his superser, helping, is to make York, thy comfond.' SoLond God,
+I desire to my thought. You more,' my while
+To most commend, Welcome avoid,
+When Warwick couldren my commend thought knock.
+
+YORK:
+Why, follow
+----------------------------------------------------------------------
+
+Sample 3:
+ she were.
+
+AND:
+She fire and be expection in pain the heart is curst,
+Believed to crave him a well.
+
+DORSE:
+Unlook'd at the rages?
+
+PETER:
+Neither a good a require of ear behold but themselve,
+And all's up ten jest, she, is the eart,
+And in the nature, sh
+----------------------------------------------------------------------
+
+======================================================================
+3. GENERATION DIVERSITY (Self-BLEU)
+======================================================================
+Lower Self-BLEU = More diverse generations
+
+Generating 50 samples from MDLM model...
+  Generated 10/50 samples
+  Generated 20/50 samples
+  Generated 30/50 samples
+  Generated 40/50 samples
+  Generated 50/50 samples
+
+Calculating MDLM Self-BLEU...
+MDLM Model Self-BLEU: 0.0171
+
+======================================================================
+MDLM MODEL EVALUATION SUMMARY
+======================================================================
+Model Configuration: 8 layers, 512 dim, 8 heads
+Total Parameters:    25.38M
+Sampling Steps:      100
+Inference Speed:     810.37 tokens/sec
+Self-BLEU Score:     0.0171
+======================================================================
+
+Results saved to ./mdlm_eval_results.txt

@@ -1,0 +1,102 @@
+======================================================================
+AUTOREGRESSIVE MODEL EVALUATION
+======================================================================
+
+--- Loading AR Model ---
+✓ Successfully loaded ar_model.pth
+  AR Model: 8 layers, 512 dim, 8 heads
+  Total Parameters: 25.38M
+
+======================================================================
+1. INFERENCE TIME
+======================================================================
+
+Testing AR Model (20 runs, 100 tokens)...
+
+AR Model Avg Time: 0.1412 seconds for 100 tokens
+AR Model Speed: 708.25 tokens/second
+
+======================================================================
+2. GENERATION QUALITY SAMPLES
+======================================================================
+
+--- AR Generated Samples ---
+
+Sample 1:
+
+Were but like to die? O sleeping son!
+Now peace! Pit! it is the matter of my bosom!
+Tell me the clocks, I lodge my woe.
+
+First Murderer:
+I think, if you remember it, and do not
+I should to my lord Aumerle, they will show't,
+My tribunes from my father's son
+----------------------------------------------------------------------
+
+Sample 2:
+
+What you, sir?
+
+MENENIUS:
+No horse, no more.
+
+CORIOLANUS:
+Ay, but so.
+
+CORIOLANUS:
+What answer me? are you denied?
+
+CORIOLANUS:
+Well, mother.
+
+Third Servingman:
+What, will you be?
+
+CORIOLANUS:
+A fool, midwell.
+
+Shepherd:
+Ay, a woman world.
+
+CORIOLANUS:
+Ay,
+----------------------------------------------------------------------
+
+Sample 3:
+
+What was thy face? fond thy brother Spring?
+Speak, prithee, master; my count mayor now.
+
+FRIAR LAURENCE:
+I hope so. Catesby, says thy face.
+You stay understand the tale thing you will be:
+And now shall we scourge a small golden hear?
+And so, sweet Sound I'
+----------------------------------------------------------------------
+
+======================================================================
+3. GENERATION DIVERSITY (Self-BLEU)
+======================================================================
+Lower Self-BLEU = More diverse generations
+
+Generating 50 samples from AR model...
+  Generated 10/50 samples
+  Generated 20/50 samples
+  Generated 30/50 samples
+  Generated 40/50 samples
+  Generated 50/50 samples
+
+Calculating AR Self-BLEU...
+AR Model Self-BLEU: 0.0282
+
+======================================================================
+AR MODEL EVALUATION SUMMARY
+======================================================================
+Model Configuration: 8 layers, 512 dim, 8 heads
+Total Parameters:    25.38M
+Inference Speed:     708.25 tokens/sec
+Self-BLEU Score:     0.0282
+======================================================================
+
+Results saved to ./ar_eval_results.txt
