@@ -86,7 +86,6 @@ Self-BLEU was calculated over 50 generated samples to measure diversity (lower s
 
 ## 4. Code Repository Structure
 
-- **models/**: Directory containing saved model checkpoints.
 - **ar.py**: Implementation and training script for the Autoregressive model.
 - **mdlm.py**: Implementation and training script for the Masked Diffusion model.
 - **eval_ar.py**: Evaluation script for AR speed and Self-BLEU metrics.
