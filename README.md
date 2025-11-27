@@ -1,4 +1,4 @@
-# Research Mini-Project: Autoregressive vs. Masked Diffusion Language Models
+# Research Mini-Project: Autoregressive vs. Diffusion Language Models
 
 This document records the theoretical study, implementation, and evaluation of non-autoregressive text generation techniques, conducted under the supervision of **Prof. Saketha Nath**. The primary objective was to compare a standard Autoregressive (AR) model against Diffusion Language Models to understand the trade-offs in inference speed, generation quality, control and diversity.
 
